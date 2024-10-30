@@ -33,61 +33,91 @@
 </head>
 <body class="font-Manrope">
     <!-- header  -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto mb-28">
+      <nav>
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+            <div class="navbar-start lg:hidden flex items-center">
+                <a class="btn btn-ghost text-3xl" href="#" aria-label="Rinterio Home">
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 h-8 w-8 bg-[#ABEF5F] p-1 ml-2 rounded-s-full rounded-e-full text-black"></i>
+                    Rinterio
+                </a>
+            </div>
+            <!-- Moving dropdown to the right on mobile  Layout-->
+            <div class="navbar-end lg:hidden">
+                <div class="dropdown mr-9">
+                    <div tabindex="0" role="button" aria-label="Menu Button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  shadow">
+                        <li><a href="#" aria-label="Home">Home</a></li>
+                        <li><a href="#" aria-label="Services">Services</a></li>
+                        <li><a href="#" aria-label="Portfolio">Portfolio</a></li>
+                        <li><a href="#" aria-label="Blogs">Blogs</a></li>
+                        <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+                    </ul>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blogs</a></li>
-                  <li><a>Contact Us</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-3xl">
-                <i class="fa-solid fa-arrow-right text-xl -rotate-45 h-8 w-8  bg-[#ABEF5F] p-1 ml-2  rounded-s-full rounded-e-full text-black"></i>
-                Rinterio</a>
+            </div>
+    
+            <!-- Desktop Layout -->
+            <div class="navbar-center hidden lg:flex">
+                <a class="btn btn-ghost text-3xl" href="#" aria-label="Rinterio Home">
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 h-8 w-8 bg-[#ABEF5F] p-1 ml-2 rounded-s-full rounded-e-full text-black"></i>
+                    Rinterio
+                </a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base lg:flex-row gap-8">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-1 text-base lg:flex-row gap-8">
+                    <li><a href="#" aria-label="Home">Home</a></li>
+                    <li><a href="#" aria-label="Services">Services</a></li>
+                    <li><a href="#" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="#" aria-label="Blogs">Blogs</a></li>
+                    <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="navbar-end flex-row gap-5">
-                <div class="bg-white border rounded-full p-1 h-12 w-12  flex items-center justify-center">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="navbar-end hidden lg:flex flex-row gap-3 md:gap-5">
+                <div class="bg-white border rounded-full p-1 h-12 w-12 flex items-center justify-center" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="bg-white border rounded-full p-1 h-12 w-12 flex items-center justify-center">
+                <div class="bg-white border rounded-full p-1 h-12 w-12 flex items-center justify-center" aria-label="Cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <button class="bg-[#ABEF5F] px-5 py-3 rounded-full  font-bold text-2xl">
+                <button class="bg-[#ABEF5F] px-5 py-3 rounded-full font-bold text-xl md:text-2xl flex" aria-label="Book a Consultation">
                     Book Consult
-                <i class="fa-solid fa-arrow-right text-xl -rotate-45 h-8 w-8  bg-black p-1 ml-2  rounded-s-full rounded-e-full text-white"></i>
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 md:h-8 md:w-8 h-7 w-7 bg-black p-1 ml-2 rounded-s-full rounded-e-full text-white"></i>
+                </button>
+            </div>
+        </div>
+      </nav>
+    
+              <!-- Hero section  -->
+        <div class="hero bg-base-200 max-h-screen mt-8 md:mt-14">
+          <div class="hero-content text-center ">
+            <div class="text-center">
+              <div class="flex justify-center items-center">
+                <img class="" src="./assets/banner.png" alt="">
+              </div>
+              <div class="mt-6">
+                <h1 class="text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                <p class="mt-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+              </div>
+              <div class="mt-8">
+                <button class="bg-[#ABEF5F] px-5 py-3 rounded-full font-bold text-2xl" aria-label="Book a Consultation ">
+                  View Details
+                  <i class="fa-solid fa-arrow-right text-xl -rotate-45 h-8 w-8 bg-black p-1 ml-2 rounded-s-full rounded-e-full text-white"></i>
               </button>
+              </div>
             </div>
           </div>
-    </header>
+        </div>
+
+</header>
+
+
     <!-- main  -->
     <main>
     </main>
